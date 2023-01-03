@@ -222,6 +222,27 @@ const revealCards = () => {
     cardBox.classList.add('cardbox--reveal');
 }
 
+const flipAndUpdateCard = (name, desc) => {
+    const cardBox = document.querySelector('.cardbox');
+    cardBox.classList.add('cardbox--flip');
+    
+    const cardName = document.querySelector('.card-name');
+    const cardDesc = document.querySelector('.card-desc');
+    
+    setTimeout(() => {
+        cardName.innerHTML = name;
+        cardDesc.innerHTML = desc;
+    }
+    , 400);
+
+    setTimeout(() => {
+        cardBox.classList.remove('cardbox--flip');
+    }
+    , 800);
+
+};
+
+
 successBtn.addEventListener('click', () => {
 
     updateCardState(currentCard, gameState.currentTeam);
@@ -241,20 +262,16 @@ successBtn.addEventListener('click', () => {
     // New card
 
     const card = pickRandomCard();
-    const cardName = document.querySelector('.card-name');
-    const cardDesc = document.querySelector('.card-desc');
-    cardName.innerHTML = card.name;
-    cardDesc.innerHTML = card.desc;
+    
+    flipAndUpdateCard(card.name, card.desc);
 });
 
 skipBtn.addEventListener('click', () => {
     if (availableCards.length < 2) { 
         return; }
     const card = pickRandomCard();
-    const cardName = document.querySelector('.card-name');
-    const cardDesc = document.querySelector('.card-desc');
-    cardName.innerHTML = card.name;
-    cardDesc.innerHTML = card.desc;
+    
+    flipAndUpdateCard(card.name, card.desc);
 });
 
 initialSetup();
