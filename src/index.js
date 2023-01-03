@@ -11,7 +11,7 @@ const cards = {
     },
     3: {
         "name": "The Dougie",
-        "desc": "A dance move popularized by Cali Swag District in their Sogn teaching you how to do it. ",
+        "desc": "A dance move popularized by Cali Swag District in their song teaching you how to do it. ",
     },
     4: {
         "name": "The Transportation Security Administration (TSA)",

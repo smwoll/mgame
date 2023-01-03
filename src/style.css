@@ -101,6 +101,8 @@ body {
   width: 100%;
   display: grid;
   place-items: center;
+  transform-style: preserve-3d;
+  perspective: 800px;
 }
 
 .cardbox .card {
@@ -119,9 +121,10 @@ body {
   background-size: 4px 4px;
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
   backface-visibility: visible;
-  perspective: 550px;
-    perspective-origin: 100% 150%;
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective-origin: bottom;
+  transform: translate3d(0, -10px, 10px) rotateX(4deg);
+  transition: 400ms;
 }
 
 .cardbox .card-inner {
@@ -139,13 +142,13 @@ body {
 
 @keyframes card-flip {
   0% {
-    transform: scale(1) rotateX(0) rotateY(0deg);
+    transform: translate3d(0, -10px, 10px) rotateX(4deg);
   }
   50% {
-    transform: scale(1.05) rotateX(5deg) rotateY(180deg);
+    transform: translate3d(0, -20px, 80px) rotateX(6deg) rotateY(180deg);
   }
   100% {
-    transform: scale(1) rotateX(0) rotateY(360deg);
+    transform: translate3d(0, -10px, 10px) rotateX(4deg) rotateY(360deg);
   }
 }
 
