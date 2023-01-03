@@ -75,7 +75,7 @@ const cards = {
     },
     19: {
         "name": "Kung Fu Panda",
-        "desc": "The eponymous star of a 2008 animated movie about a large black and white bearlike mammal who performs martial arts. I the film, the protagonist Po, voiced by Jack Black, works to defat the evil Tai Lung. ",
+        "desc": "The eponymous star of a 2008 animated movie about a large black and white bearlike mammal who performs martial arts. In the film, the protagonist Po, voiced by Jack Black, works to defat the evil Tai Lung. ",
     },
     20: {
         "name": "Dr. Phill",
