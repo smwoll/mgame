@@ -84,7 +84,8 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   position: relative;
@@ -123,6 +124,7 @@ body {
 }
 
 button {
+  color: black;
   padding: 8px 16px;
   border-radius: 6px;
   background-color: #fff;
@@ -132,6 +134,21 @@ button {
   cursor: pointer;
   transition: 300ms;
   min-width: 8ch;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  color: darkslategray;
+  opacity: 0.8;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 button.success {
