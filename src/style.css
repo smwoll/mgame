@@ -94,11 +94,52 @@ body {
   opacity: 0;
   transition: 300ms;
   visibility: hidden;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.cardbox .card {
+  width: clamp(200px, 25vw, 400px);
+  aspect-ratio: 2/1;
+  height: auto;
+  padding: 24px 28px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .cardbox--reveal {
   opacity: 1;
   visibility: visible;
+}
+
+.cardbox-buttons {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 3px solid blue;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 300ms;
+  min-width: 8ch;
+}
+
+button.success {
+border-color: green;
+}
+
+button.skip {
+  border-color: orange;
 }
 
 .time-over-message {
