@@ -2,24 +2,104 @@ console.log("Congratulations!");
 
 const cards = {
     1: {
-        "name": "The Fool",
-        "desc": "Example description",
+        "name": "Rickrolling",
+        "desc": "An internet goof where a person posts a link they claim to be relevant, but instead directs to a vide of Rick Astley’s 1987 pop song, “Never Gonna Give You Up.” To date, the original video has been viewed 77 million times. ",
     },
     2: {
-        "name": "The Magician",
-        "desc": "Example description",
+        "name": "Oscar the Grouch",
+        "desc": "An angry green man who lives I the garbage. Loves his life in the trash on Sesame Street.",
     },
     3: {
-        "name": "The High Priestess",
-        "desc": "Example description",
+        "name": "The Dougie",
+        "desc": "A dance move popularized by Cali Swag District in their Sogn teaching you how to do it. ",
     },
     4: {
-        "name": "The Empress",
-        "desc": "Example description",
+        "name": "The Transportation Security Administration (TSA)",
+        "desc": "Exampl",
     },
     5: {
-        "name": "The Emperor",
-        "desc": "Example description",
+        "name": "Objection!",
+        "desc": "What a lawyer says “dramatically” to a judge, when they want to formally protest an issue in court. This is frequently said after the opposing council asks a question of a witness. ",
+    },
+    6: {
+        "name": "Black Panther",
+        "desc": "The superhero identity of T’Challa, king of the fictional country of Wakanda. The feline identity is based down by rulers of the country and follows a strict selection process. ",
+    },
+    7: {
+        "name": "Cruella de Vil",
+        "desc": "The extremely mean villain from the Disney animated movie 101 Dalmatians. ",
+    },
+    8: {
+        "name": "Yodeling",
+        "desc": "A type of signing where you change pitch repeatedly from very low to very high. It is usually associated with lederhosen-wearing Alpine mountain climbers, since natural settings with strong echoes offer an ideal place for a performance.",
+    },
+    9: {
+        "name": "Clippy",
+        "desc": "The nickname of the Office\nAssistant in Microsoft Office, who\nappears as the metal object used to\nhold sheets of paper together. He\nwould \"tap\" on the monitor to get your attention.",
+    },
+    10: {
+        "name": "Star Wars Kid",
+        "desc": "The star of a viral video that shows a high school student Imitating lightsaber moves using a golf ball retriever. The tape leaked online after being left in the basement of his school, leading to dozens of remixes featuring music and advanced special effects.",
+    },
+    11: {
+        "name": "MySpace Tom",
+        "desc": "Cofounder of the world's most popular social networking sitebefore Facebook. He became instantly recognizable because all users who joined the site would automatically \"friend\" him. He sold the site for $580M to Rupert Murdoch's News Corporation.",
+    },
+    12: {
+        "name": "A Werewolf",
+        "desc": "A human who transforms into a hirsute, bloodthirsty creature. Known as lycanthropy, this change is often triggered by a full moon. Suspected lycanthropes were persecuted in early modern Europe, and are now a staple figure in pop culture and party games.",
+    },
+    13: {
+        "name": "Florida man",
+        "desc": "The combined exploits of folks from the Sunshine State, collected in a popular Twitter profile. Examples include someone who \"Disguises Himself As 'The Sun: Steals Logo Towel\" and someone who \"Accidentally Shoots Himself While Celebrating New Year's Eve.",
+    },
+    14: {
+        "name": "Moshing",
+        "desc": "A dance style associated with the punk music scene, where performers aggressively slam against one another. While this dance can be done solo, it is most often performed in a “pit” alongside others. ",
+    },
+    15: {
+        "name": "Kidz Bop",
+        "desc": "A series of albums that feature children signing pop songs. Hilariously, the more risque lyrics are changed. ",
+    },
+    16: {
+        "name": "A monster truck",
+        "desc": "A specialized vehicle with a heavy duty suspensions, four-wheel steering, and oversized tires constructed for competition and entertainment uses. They usually have names like grave Digger, Batman, Bigfoot, and El Toro Loco. ",
+    },
+    17: {
+        "name": "A Oujia board",
+        "desc": "A device used by Spiritualists and, eventually, teens. Marked with the letters, numbers, and the words “yes” and “no,” these are used to spell out messages from the beyond. Its name is now a trademark of Hasbro.",
+    },
+    18: {
+        "name": "A gif",
+        "desc": "A looping image that people use to display short videos on the internet. Pronounced with a hard G, obviously. ",
+    },
+    19: {
+        "name": "Kung Fu Panda",
+        "desc": "The eponymous star of a 2008 animated movie about a large black and white bearlike mammal who performs martial arts. I the film, the protagonist Po, voiced by Jack Black, works to defat the evil Tai Lung. ",
+    },
+    20: {
+        "name": "Dr. Phill",
+        "desc": "The Oprah-endorsed TY psychologist who offers homespun wisdom like “Sometimes you make he right decision, sometimes you make the decision right.”",
+    },
+    21: {
+        "name": "Dance Dance Revolution ",
+        "desc": "A rhythm arcade game created in 1998. Players stand on a platform and hit colored arrows laid out in a cross, in time to the beat of different songs. At its highest level, it becomes a substantial aerobic workout. ",
+    },
+    22: {
+        "name": "OK Boomer",
+        "desc": "The retort of Gen Z to the generation born roughly between 1946 and 1965. Usually said in response to accusations that younger generations eat too many avocados, dye their hair, and are on their phones too much.",
+    },
+    23: {
+        "name": "Baby Yoda",
+        "desc": "Describe this adorable little child yourself, you can.",
+    },
+    24: {
+        "name": "Hagrid",
+        "desc": "The half-giant from the Harry Potter series. Apart from his role as gamekeeper of Hogwarts, he was tasked with reintroducing Harry Potter to the wizarding world, leading to the iconic line, “Yer a wizard, ‘arry!”",
+    },
+    25: {
+        "name": "Voguing",
+        "desc": "A dance that originated I the 1980s ballroom and drag scene, where the performer shifts between angular model-like poses. It was popularized by the documentary Paris is Burning as well as Madonna in the song with the same name. ",
     },
 }
 
