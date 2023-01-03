@@ -31,7 +31,7 @@ const cards = {
     },
     8: {
         "name": "Yodeling",
-        "desc": "A type of signing where you change pitch repeatedly from very low to very high. It is usually associated with lederhosen-wearing Alpine mountain climbers, since natural settings with strong echoes offer an ideal place for a performance.",
+        "desc": "A type of singing where you change pitch repeatedly from very low to very high. It is usually associated with lederhosen-wearing Alpine mountain climbers, since natural settings with strong echoes offer an ideal place for a performance.",
     },
     9: {
         "name": "Clippy",
@@ -59,7 +59,7 @@ const cards = {
     },
     15: {
         "name": "Kidz Bop",
-        "desc": "A series of albums that feature children signing pop songs. Hilariously, the more risque lyrics are changed. ",
+        "desc": "A series of albums that feature children singing pop songs. Hilariously, the more risque lyrics are changed. ",
     },
     16: {
         "name": "A monster truck",
@@ -121,7 +121,6 @@ const updateAvailableCards = () => {
 }
 
 const pickRandomCard = () => {
-    console.log('pickRandom');
     const numCards = availableCards.length;
     const getCardId = () => {
         // Pick a random available card.
