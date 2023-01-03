@@ -228,17 +228,22 @@ const flipAndUpdateCard = (name, desc) => {
     
     const cardName = document.querySelector('.card-name');
     const cardDesc = document.querySelector('.card-desc');
+
+    successBtn.disabled = true;
+    skipBtn.disabled = true;
     
     setTimeout(() => {
         cardName.innerHTML = name;
         cardDesc.innerHTML = desc;
     }
-    , 400);
+    , 350);
 
     setTimeout(() => {
         cardBox.classList.remove('cardbox--flip');
+        successBtn.disabled = false;
+        skipBtn.disabled = false;
     }
-    , 800);
+    , 600);
 
 };
 

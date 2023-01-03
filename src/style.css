@@ -142,7 +142,7 @@ body {
     transform: scale(1) rotateX(0) rotateY(0deg);
   }
   50% {
-    transform: scale(1.04) rotateX(5deg) rotateY(180deg);
+    transform: scale(1.05) rotateX(5deg) rotateY(180deg);
   }
   100% {
     transform: scale(1) rotateX(0) rotateY(360deg);
