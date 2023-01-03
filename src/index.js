@@ -15,7 +15,7 @@ const cards = {
     },
     4: {
         "name": "The Transportation Security Administration (TSA)",
-        "desc": "Exampl",
+        "desc": "The branch of the US government that controls safety in airports. ",
     },
     5: {
         "name": "Objection!",
