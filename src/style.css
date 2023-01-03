@@ -74,6 +74,8 @@ h6 {
 
 /* end reset */
 
+/* Base Styles */
+
 h1 {
   color: inherit;
 }
@@ -89,6 +91,8 @@ body {
   font-weight: 300;
   position: relative;
 }
+
+/* Card Stuff */
 
 .cardbox {
   opacity: 0;
@@ -106,7 +110,14 @@ body {
   padding: 24px 28px;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(219, 210, 144, 0.255) 0%,
+    rgba(255, 255, 255, 0.067) 60%
+  );
+  background-repeat: repeat;
+  background-size: 4px 4px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
 }
 
 .cardbox--reveal {
@@ -121,6 +132,8 @@ body {
   flex-wrap: wrap;
   gap: 16px;
 }
+
+/* Buttons */
 
 button {
   color: black;
@@ -157,6 +170,8 @@ border-color: green;
 button.skip {
   border-color: orange;
 }
+
+/* Timer and reveals */
 
 .time-over-message {
   opacity: 0;
