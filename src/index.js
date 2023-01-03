@@ -130,7 +130,17 @@ const pickRandomCard = () => {
         return cardId;
     }
 
-    const chosenCardId = getCardId();
+    let chosenCardId = getCardId();
+
+    // Make sure we don't pick the same card twice in a row on skips.
+    for (let i = 0; i < numCards; i++) {
+        if (chosenCardId === currentCard) {
+            chosenCardId = getCardId();
+        } else {
+            break;
+        }
+    }
+
     currentCard = chosenCardId;
     return cards[chosenCardId];
 }
