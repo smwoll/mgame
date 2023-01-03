@@ -116,6 +116,7 @@ updateTeamCounts();
 
 const successBtn = document.querySelector('button.success');
 const skipBtn = document.querySelector('button.skip');
+const resetBtn = document.querySelector('button.reset');
 
 const initialSetup = () => {
     const cardName = document.querySelector('.card-name');
@@ -125,6 +126,8 @@ const initialSetup = () => {
         // Game over.
         cardName.innerHTML = 'Round Over';
         cardDesc.innerHTML = 'No more cards available';
+        successBtn.disabled = true;
+        skipBtn.disabled = true;
         return;
     }
     if (!card) {
@@ -134,11 +137,17 @@ const initialSetup = () => {
     cardDesc.innerHTML = card.desc;
 }
 
+const revealCards = () => {
+    const cardBox = document.querySelector('.cardbox');
+    cardBox.classList.add('cardbox--reveal');
+}
+
 successBtn.addEventListener('click', () => {
 
     updateCardState(currentCard, gameState.currentTeam);
     updateAvailableCards();
     console.log(availableCards);
+    storeGameState(gameState);
 
     if (availableCards.length < 1) {
         // Game over.
@@ -148,7 +157,7 @@ successBtn.addEventListener('click', () => {
         cardDesc.innerHTML = 'No more cards available';
         return;
     }
-
+    
     // New card
 
     const card = pickRandomCard();
@@ -169,3 +178,43 @@ skipBtn.addEventListener('click', () => {
 });
 
 initialSetup();
+
+resetBtn.addEventListener('click', () => {
+    // Reset the game. Clear URL params.
+    const url = new URL(window.location.href);
+    url.searchParams.delete('gData');
+    window.history.pushState({}, '', url);
+    window.location.reload();
+}   );
+
+const timer = document.querySelector('.timer');
+const timerBtn = document.querySelector('.timer-btn');
+const timeDisplay = document.querySelector('.time-display');
+const timeOverMessage = document.querySelector('.time-over-message');
+
+// Countdown from 1 minute.
+let timeLeft = 60;
+
+const updateTimer = () => {
+    timeDisplay.innerHTML = timeLeft;
+}
+
+const startTimer = () => {
+    timerBtn.disabled = true;
+    const interval = setInterval(() => {
+        timeLeft -= 1;
+        updateTimer();
+        if (timeLeft < 1) {
+            clearInterval(interval);
+            successBtn.disabled = true;
+            skipBtn.disabled = true;
+            timeOverMessage.classList.add('time-over-message--reveal');
+        }
+    }, 1000);
+}
+
+timerBtn.addEventListener('click', () => {
+    startTimer();
+    revealCards();
+}
+);

@@ -89,3 +89,25 @@ body {
   font-weight: 300;
   position: relative;
 }
+
+.cardbox {
+  opacity: 0;
+  transition: 300ms;
+  visibility: hidden;
+}
+
+.cardbox--reveal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.time-over-message {
+  opacity: 0;
+  transition: 300ms;
+  visibility: hidden;
+}
+
+.time-over-message--reveal {
+  opacity: 1;
+  visibility: visible;
+}

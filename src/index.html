@@ -27,6 +27,49 @@
                     Game time!
                 </h1>
 
+                <section class="team-select">
+                    <h2 class="sr-text">
+                        Select a team
+                    </h2>
+                    <form>
+                        <fieldset>
+                            <legend>Select team:</legend>
+                        
+                            <div>
+                                <input type="radio" id="teamone" name="team" value="1" checked>
+                                <label for="teamone">Team 1</label>
+                            </div>
+                        
+                            <div>
+                                <input type="radio" id="teamtwo" name="team" value="2">
+                                <label for="teamtwo">Team 2</label>
+                            </div>
+                        </fieldset>
+
+                    </form>
+                </section>
+
+                <section class="timer">
+                    <h2 class="timer-title">
+                        Timer
+                    </h2>
+                    <p>
+                        <span class="time-display">
+                            60
+                        </span>
+                        <span>seconds remaining </span>
+                    </p>
+                    <button class="timer-btn">
+                        Start Round
+                    </button>
+                </section>
+
+                <section class="time-over-message">
+                    <p>
+                        Time's up!
+                    </p>
+                </section>
+
                 <section class="cardbox">
                     <div class="card">
                         <h2 class="card-name">
@@ -41,6 +84,12 @@
                     </button>
                     <button class="success">
                         Success
+                    </button>
+                </section>
+
+                <section class="reset">
+                    <button class="reset">
+                        Reset Round
                     </button>
                 </section>
         </div>
