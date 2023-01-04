@@ -291,6 +291,9 @@ successBtn.addEventListener('click', () => {
     console.log(availableCards);
     storeGameState(gameState);
 
+    // Update team counts.
+    updateTeamCounts();
+
     if (availableCards.length < 1) {
         // Game over.
         const cardName = document.querySelector('.card-name');
@@ -305,9 +308,6 @@ successBtn.addEventListener('click', () => {
     const card = pickRandomCard();
     
     flipAndUpdateCard(card.name, card.desc);
-
-    // Update team counts.
-    updateTeamCounts();
 });
 
 skipBtn.addEventListener('click', () => {
