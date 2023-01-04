@@ -300,6 +300,8 @@ successBtn.addEventListener('click', () => {
         const cardDesc = document.querySelector('.card-desc');
         cardName.innerHTML = 'Round Over';
         cardDesc.innerHTML = 'No more cards available';
+        successBtn.disabled = true;
+        skipBtn.disabled = true;
         return;
     }
     
