@@ -22,12 +22,17 @@
 <body>
     <div id="app">
         <div class="content">
-            <div class="script-intro">
-                <h1 class="sr-text">
-                    Game time!
-                </h1>
+                <header class="intro-topper">
+                    <h1>
+                        Monikers
+                    </h1>
+                    <p>
+                        A game of charades!
+                    </p>
+                </header>
 
-                <section class="team-select">
+                <div class="team-timer-wrap">
+                    <section class="team-select">
                     <h2 class="sr-text">
                         Select a team
                     </h2>
@@ -50,7 +55,7 @@
                 </section>
 
                 <section class="timer">
-                    <h2 class="timer-title">
+                    <h2 class="timer-title sr-text">
                         Timer
                     </h2>
                     <p>
@@ -63,6 +68,7 @@
                         Start Round
                     </button>
                 </section>
+                </div>
 
                 <section class="time-over-message">
                     <p>
@@ -96,7 +102,7 @@
                         Reset Round
                     </button>
                 </section>
-        </div>
+        
     </div>
     <script type="module" src="index.js"></script>
 </body>

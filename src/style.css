@@ -96,6 +96,18 @@ body {
     background-position: 0 0, 40px 40px;
 }
 
+.sr-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Card Stuff */
 
 .cardbox {
@@ -179,7 +191,7 @@ body {
     transform: translate3d(0, -10px, 10px) rotateX(4deg);
   }
   50% {
-    transform: translate3d(0, -20px, 80px) rotateX(6deg) rotateY(180deg);
+    transform: translate3d(0, -50px, 100px) rotateX(6deg) rotateY(180deg);
   }
   100% {
     transform: translate3d(0, -10px, 10px) rotateX(4deg) rotateY(360deg);
@@ -232,12 +244,52 @@ button.skip {
   border-color: orange;
 }
 
+.intro-topper {
+  text-align: center;
+}
+
 /* Timer and reveals */
+
+.team-timer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: min(96%, 600px);
+}
+
+.team-timer-wrap section {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  width: min(96%, 600px);
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px 28px;
+  text-align: center;
+  font-size: 1.2rem;
+  flex: 1 1;
+}
+
+.time-display {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+  display: block;
+}
+
+.timer p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 
 .time-over-message {
   opacity: 0;
   transition: 300ms;
   visibility: hidden;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .time-over-message--reveal {

@@ -104,7 +104,7 @@ const cards = {
 }
 
 let gameState = {
-    currentTeam: 0,
+    currentTeam: 1,
     cardState: []
 }
 
@@ -194,11 +194,33 @@ const dummyTest = () => {
     storeGameState(gameState);
 }
 
+const teamSelect = document.querySelector('.team-select form');
+
+const updateTeamSelectOnLoad = () => {
+    teamSelect.querySelector(`input[value="${gameState.currentTeam}"]`).checked = true;
+}
+
+updateTeamSelectOnLoad();
+
+teamSelect.addEventListener('change', (e) => {
+    console.log('team changed', e.target.value);
+    gameState.currentTeam = parseInt(e.target.value);
+    console.log('game state', gameState);
+    storeGameState(gameState);
+});
+
+
 const updateTeamCounts = () => {
-    const teamCounts = [0, 0, 0];
+    const teamCounts = [0, 0];
     gameState.cardState.forEach((card) => {
-        teamCounts[card.t] += 1;
+        if (card.t === 1) {
+            teamCounts[0]++;
+        }
+        if (card.t === 2) {
+            teamCounts[1]++;
+        }
     });
+    console.log('team counts', teamCounts);
 }
 
 updateTeamCounts();
