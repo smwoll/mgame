@@ -361,3 +361,10 @@ timerBtn.addEventListener('click', () => {
     revealCards();
 }
 );
+
+const copyBtn = document.querySelector('button.copy');
+
+copyBtn.addEventListener('click', () => {
+    copyUrlToClipboard();
+}
+);
