@@ -221,6 +221,11 @@ const updateTeamCounts = () => {
         }
     });
     console.log('team counts', teamCounts);
+
+    const teamCounters = document.querySelectorAll('.score-display');
+    teamCounters.forEach((counter, i) => {
+        counter.innerHTML = teamCounts[i];
+    });
 }
 
 updateTeamCounts();
@@ -300,6 +305,9 @@ successBtn.addEventListener('click', () => {
     const card = pickRandomCard();
     
     flipAndUpdateCard(card.name, card.desc);
+
+    // Update team counts.
+    updateTeamCounts();
 });
 
 skipBtn.addEventListener('click', () => {
